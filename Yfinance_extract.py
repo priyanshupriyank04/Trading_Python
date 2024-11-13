@@ -1,3 +1,6 @@
+#This is the sample code to simply extract data of stocks from Yfinance 
+
+
 import datetime as dt          #datetime used for date and time functions
 import yfinance as yf          #used to extract stock OHLC data 
 import pandas as pd            #for creating dataframes 
