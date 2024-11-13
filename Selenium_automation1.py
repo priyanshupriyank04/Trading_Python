@@ -1,4 +1,4 @@
-#This is sample code to be used for just automated web opening of the specified stock on Yfinance
+#This is sample code to be used for just automated web opening of the specified stock on Yfinance and also extracting the stock financial data
 
 
 
@@ -21,4 +21,5 @@ driver = webdriver.Chrome(service=service)  #use it to open the url
 driver.get(url)                 #gets the url we created
 driver.implicitly_wait(2)       #use the implicit wait function to ensure that browser is allowed to load even in poor connection conditions 
 
-
+table = driver.find_element(By.XPATH,"//div[@class='tableBody yf-1pgoo1f']").text  #this table stores all the content of the stock we wanted to enquire using this 
+print(table)
